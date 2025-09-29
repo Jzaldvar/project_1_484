@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="factions.html">Factions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Send us a message</h2>
+
+    <form>
+        <!-- fieldset element -->
+        <fieldset>
+            <legend>Your Info</legend>
+            <label for="name">Name:</label>
+            <!-- autocomplete attribute -->
+            <input type="text" id="name" name="name" autocomplete="on" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="on" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Message</legend>
+            <label for="army">Favorite Army:</label>
+            <input type="text" id="army" name="army"><br><br>
+
+            <label for="comments">Comments:</label>
+            <!-- wrap attribute -->
+            <textarea id="comments" name="comments" wrap="soft"></textarea>
+        </fieldset>
+        <!-- fieldset element end -->
+
+
+        <button type="submit">Send</button>
+
+        <!-- disabled attribute -->
+        <button type="button" disabled>Coming Soon</button>
+    </form>
+</main>
+
+<footer>
+    <p>Student Project</p>
+</footer>
+</body>
+</html>
